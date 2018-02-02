@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'glypha';
+    src: url('../font/glypha-bold-webfont.woff2') format('woff2'),
+         url('../font/glypha-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.7rem;
+    font-family: arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: glypha;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+// Header placeholder
+.header__logo {
+    margin: 40px 0;
+}
+
+.header__nav {
+    background: map-get($grays, '900');
+    height: 58px;
+    margin-bottom: 20px;
+}
+
+// Footer placeholder
+.footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    background: map-get($grays, '100');
+}
+
+
+.font--brand {
+    font-family: glypha;
+}
+
+// All text sizes
+@each $name, $value in $font-sizes {
+    .text-#{$name} { font-size: $value; }
+}
+
+.usp-section {
+    padding: 30px 40px;
+}
+
+.js-update-content__hidden {
+    display: none;
+}
+
+.js-conditions__content {
+    display: none;
+    
+    &--open {
+        display: block;
+    }
+}
+
+.visible {
+    display: block !important;
+}
+
+
+.hidden {
+    display: none !important;
+}

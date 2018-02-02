@@ -1,0 +1,54 @@
+
+.icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background: none;
+    border: 0;
+    padding: 0;
+    line-height: 1;
+
+    &.icon--text-top {
+        vertical-align: text-top;
+    }
+
+    &.icon--before:before {
+        left: 0;
+    }
+
+    // &.icon--after {
+    //     margin-left: 5px;
+    // }
+
+    &:before {
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+    }
+
+    &--small:before {
+        height: 21px;
+        background-size: 12px 12px;
+        background-position: center center;
+    }
+
+    &--check--white:before {
+        background-image: url(../images/icons/icon-check-white.svg);
+    }
+}
+
+
+.icon--direction-left--blue {
+    &:before {
+        background-image: url(../images/icons/icon-direction-right-blue.svg);
+        
+    }
+}
+
+.icon--plus-round--blue:before {
+    background-image: url(../images/icons/icon-plus-round-blue.svg);
+}

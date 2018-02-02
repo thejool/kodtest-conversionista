@@ -1,0 +1,48 @@
+.btn {
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    border: 2px solid map-get($grays, '900');
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+    border-radius: 0;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,.60);
+    transition: background 200ms;
+}
+
+.btn--orange {
+    $bg: map-get($colors, 'orange');;
+    color: map-get($colors, 'red');;
+    background: $bg;
+
+    &:hover {
+        background: lighten($bg, 7%);
+    }
+}
+
+.btn--big {
+    font-size: 1.5rem;
+    padding: 19px 20px 17px;    
+    
+    @include media-breakpoint-up('xl') {
+        padding: 19px 40px 17px;    
+    }
+}
+
+.btn.btn--margin {
+    margin-top: 10px;
+
+    @include media-breakpoint-up('xl') {
+        margin-left: 15px;  
+        margin-top: 0;
+    }
+}
+
+.btn--mob-special {
+    @include media-breakpoint-down('md') {
+        width: 100%;
+        margin-left: 0;
+    }
+}

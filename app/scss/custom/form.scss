@@ -1,0 +1,43 @@
+.input {
+    width: 100%;
+    border-radius: 2px;
+    border: solid 1px map-get($grays, '400');
+    font-size: 1.6rem;
+    padding: 13px 15px;
+    position: relative;
+    line-height: 1.1;
+}
+
+    .input--select {
+        -webkit-appearance: button;
+        -webkit-padding-end: 20px;
+        -webkit-padding-start: 2px;
+        border: 1px solid map-get($grays, '400');
+        font-size: 1.6rem;
+        line-height: 1.1;
+        margin: 0;
+        overflow: hidden;
+        padding: 14px 15px 13px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        background-image: url(../images/icons/icon-dropdown-air.png),url(../images/icons/bg-black.jpg);
+        background-position: right center,right top;
+        background-repeat: no-repeat,repeat-y;
+        width: 100%;
+        -moz-appearance: none;
+        display: block;
+        cursor: pointer;
+    }
+
+
+.form-group {
+    margin: 20px 0;
+}
+
+.form__label {
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: inline-block;
+    color: map-get($theme-colors, 'secondary');
+}
+    

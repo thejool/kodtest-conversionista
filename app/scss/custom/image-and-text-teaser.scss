@@ -1,0 +1,21 @@
+.image-and-text-teaser {
+    display: table;
+}
+
+    .image-and-text-teaser--bordered {
+        border-bottom: solid 1px map-get($grays, '200');
+    }
+
+    .image-and-text-teaser__text {
+        display: table-cell;
+        vertical-align: middle;
+        width: 60%;
+        font-size: 1.6rem;
+    }
+
+    .image-and-text-teaser__image {
+        width: 40%;
+        display: table-cell;
+        vertical-align: bottom;
+        text-align: right;
+    }

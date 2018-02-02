@@ -1,0 +1,45 @@
+.error {
+    border: solid 1px #cdd0d4;
+    border-left-color: map-get($colors, 'light-red');
+    border-left-width: 3px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+    .error__title {
+        color: #222;
+        font-size: 1.7rem;
+    }
+
+    .error__list {
+        padding-left: 23px;
+        margin: 10px 0 15px;
+        list-style: none;
+        color: map-get($colors, 'light-red');
+        font-size: 1.3rem;
+    }
+
+    .error__list__item {
+        position: relative;
+        color: map-get($colors, 'light-red');
+        
+        a {
+            color: map-get($colors, 'light-red');
+            font-weight: bold;
+        }
+
+        &:before {    
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: map-get($colors, 'orange');
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+            position: absolute;
+            left: -22px;
+            top: 8px;
+        }
+    }

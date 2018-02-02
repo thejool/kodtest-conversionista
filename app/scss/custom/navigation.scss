@@ -1,0 +1,88 @@
+
+.navigation {
+    margin-bottom: 30px;
+}
+
+    .navigation__step {
+        width: 25%;
+        float: left;
+        padding-left: 0;
+        padding-right: 0;
+
+        &:first-child .navigation__step__content:before,
+        &:last-child .navigation__step__content:after {
+            content: none;
+        }
+
+        & + li {
+            padding-left: 6px;
+            text-indent: 12px;
+        }
+    }
+
+        .navigation__step__content {
+            position: relative;
+            padding: 15px 0;
+            background: map-get($grays, '200');
+            color: map-get($grays, '800');;
+            font-size: 1.4rem;
+
+            @include media-breakpoint-up('xl') {
+                font-size: 1.5rem;
+            }
+
+            .navigation__step__check {
+                display: none;
+            }
+        }
+
+            .navigation__step__content:before,
+            .navigation__step__content:after {
+                width: 0;
+                height: 0;
+                border-top: 26px inset transparent;
+                border-bottom: 26px inset transparent;
+                border-left: 13px solid $white;
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+            }
+
+            .navigation__step__content:after {
+                border-left: 13px solid map-get($grays, '200');;
+                right: -13px;
+                left: auto;
+                z-index: 2;
+            }
+
+            .navigation__step__content--current {
+                background: map-get($colors, 'yellow');
+                color: map-get($colors, 'red');
+
+                &:after {
+                    border-left-color: map-get($colors, 'yellow');
+                }
+            }
+
+            .navigation__step__content--done {
+                color: $white;
+                background: map-get($colors, 'green');
+
+                &:after {
+                    border-left-color: map-get($colors, 'green');
+                }
+
+                .navigation__step__number {
+                    display: none;
+                }
+
+                .navigation__step__check {
+                    display: inline-block;
+                }
+            }
+
+
+.js-navigation__step--hidden {
+    display: none;
+}

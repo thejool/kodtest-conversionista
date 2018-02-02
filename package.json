@@ -1,0 +1,32 @@
+{
+  "name": "thejool",
+  "version": "0.0.1",
+  "description": "Portfolio thejool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel Gustafsson",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.5.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.3",
+    "run-sequence": "^2.2.0"
+  },
+  "dependencies": {
+    "postcss-scss": "^1.0.3",
+    "uglify": "^0.1.5"
+  }
+}

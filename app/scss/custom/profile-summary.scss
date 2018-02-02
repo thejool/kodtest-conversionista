@@ -1,0 +1,62 @@
+
+.profile-summary {
+    padding: 20px 20px 30px;
+
+    @include media-breakpoint-up('lg') {
+        padding: 30px 40px;
+    }
+
+    .profile-summary__section:first-child {
+        margin-bottom: 25px;
+    }
+
+    .profile-summary__section__content {
+        display: block;
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .profile-summary__section__content__item {
+        display: table-cell;
+    
+        &--width {
+            vertical-align: middle;
+            width: 50px;
+
+            @include media-breakpoint-up('lg') {
+                width: 100px;
+            }
+        }
+    }
+
+}
+
+.calculated-price__price {
+    font-size: 4rem;
+    line-height: .8;
+    color: map-get($colors, 'orange-dark');
+    font-weight: bold;
+    font-family: glypha;
+
+    @include media-breakpoint-up('sm') {
+        font-size: 6rem;
+    }
+}
+
+.calculated-price__label {
+    color: $black;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.block--boxed-block {
+    border: solid 1px map-get($grays, '400');;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.05), 0 1px 3px 0 rgba(0,0,0,.05);
+}
+
+.block--theme-white {
+    background-color: $white;
+}

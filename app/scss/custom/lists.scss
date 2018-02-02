@@ -1,0 +1,40 @@
+
+.list-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+}
+
+
+
+.list {
+    padding-left: 23px;
+    margin: 10px 0 15px;
+    list-style: none;
+}
+
+    .list--check-list li {
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: map-get($colors, 'orange');
+            position: absolute;
+            left: -22px;
+            top: 8px;
+            width: 14px;
+            height: 13px;
+            background-color: transparent;
+            background-image: url(../images/icons/icon-check-green.svg);
+            background-repeat: no-repeat;
+            border-radius: 0;
+            top: 6px;
+            left: -24px;
+        }
+    }
